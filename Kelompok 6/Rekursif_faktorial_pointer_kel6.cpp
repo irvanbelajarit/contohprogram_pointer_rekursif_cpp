@@ -13,7 +13,7 @@ Divyas Bharath_825210129
 #include<iostream>
 using namespace std;
 
-int faktorial (int x); //tipe data
+int abc (int x); //tipe data
 
 int main (){
 	
@@ -32,7 +32,7 @@ int main (){
 	
 	cout << "Cara penghitungannya : " << endl;
 	
-	hasil = faktorial(*xptr);
+	hasil = abc(*xptr);
 	
 	cout << "\n\nFaktorial " << x << "! = " << hasil << endl;
 	cout << "Alamat dari hasil faktorial : " << &hasil << endl;
@@ -46,14 +46,14 @@ int main (){
 	
 }
 
-int faktorial (int x){
+int abc (int x){
 	if (x == 1) {
 		cout << x;
 		return (x);
 	} 
 	else {
 		cout << x << " * ";
-		return x * (faktorial (x - 1));
+		return x * (abc (x - 1));
 	}
 	
 	return 0;
